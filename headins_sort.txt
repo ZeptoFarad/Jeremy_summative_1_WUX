@@ -1,0 +1,103 @@
+Headings Group 1 - Pale Blue
+Source Sans Pro -			9
+Sora -				12
+MicroExtendFLF -			5
+
+Sub Headings Group 1 - Pale Blue
+MicroExtendFLF - 			1
+MS Gothic Blue -			-4
+MS Gothic Yellow - 		-4
+
+Paragraph Group 1 - Pale Blue
+Josefin Sans - 			-3
+MS UI Gothic -			-5
+Sansation -				1
+
+---------------------------------------
+
+Headings Group 2 - Purple/Pink
+Anita Semi Square -		9
+Prototype -				10
+Federal Escort - 			0
+
+Sub Headings Group 2 - Purple/Pink
+Source Sans Pro -			6
+Anita Semi-square - 		3
+Good Times - 			0
+
+Paragraph Group 2 - Purple Pink
+Open Sans -				-1
+Titillium Web -			0
+Quicksand -				-3
+---------------------------------------
+
+Headings Group 3 - Yellow/Green
+Arial -				9
+Federal Escourt Half Tone -	-7
+MicroExtendFLF -			4
+
+Sub Headings Group 2 - Yellow/Green
+Prototype 24px -			10
+Prototype 16px -			4
+Orbitron -				0
+
+Paragraph Group  3 - Yellow Green
+Josefin Sans Regular -		0
+Josefin Sans Medium -		-2		
+Sansation Regular -		-3
+
+---------------------------------------
+
+Headings Group 4 - Black
+MicroExtendFLF -			10
+Good Times -			-5
+Sora -				4
+
+Sub Headings Group 3 - Black
+Orbitron -				0
+MS Gothic - 			-5
+MS Gothic Blue -			-9
+
+Paragraph Group 4 - Black
+Sansation -				2
+MS UI Gothic -			-14
+MS UI Gothic -			-13
+
+
+--------------------------------------
+Tally - Highest Scores
+
+Headings
+
+Source Sans Pro -			9
+Sora -				12  <--------- Most Popular
+Anita Semi Square -		9
+MicroExtendFLF -			5
+Prototype -				10
+Federal Escort - 			0
+Arial -				9
+Good Times -			-5
+Federal Escourt Half Tone -	-7
+
+Sub Headings
+
+MS Gothic Blue -			-4
+MicroExtendFLF - 			1
+Orbitron -				0
+Prototype 24px -			10   <--------- Most Popular
+Prototype 16px -			4
+Source Sans Pro -			6
+Anita Semi-square - 		3
+Good Times - 			0
+
+Paragraphs
+
+Josefin Sans Regular -		0
+Open Sans -				-1
+Titillium Web -			0
+Quicksand -				-3
+MS UI Gothic -			-5
+Sansation -				1   <--------- Most Popular   
+
+
+

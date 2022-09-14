@@ -1,0 +1,5 @@
+I like this font alot - 		+2
+I like this font a little - 		+1
+I am undecided on this font - 	 0
+I dont like this font -			-1
+I think this font is terrible - 	-2

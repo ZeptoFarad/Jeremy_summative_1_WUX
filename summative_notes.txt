@@ -1,0 +1,35 @@
+ Summative 1 Rubric Notes:
+
+Treaty of Waitangi - Establish an approach to encorperate TOW into the product design. Koha, language options considerations, visual components, study symbols etc to make sure they are not 
+offensive and are appropriate for the application.
+
+Understand Visual Design principles - Yoobee core best practices(Blackboard) - dont stress, just use common sense - Colour, contrast, alignment, proximity etc.
+Round elements with straight elements - flat graphics vs 3d graphics > try not to mix and match.
+
+
+Apply UX design techniques - User testing , competitor analysis, user journeys on (ideal product or competative product or own product)
+
+Test design prototypes - surveys, interveiws, lofi wireframes, style tiles -- iterative multiple tests with users
+
+Produce CSS using CSS pre processor - SASS
+
+Advanced HTML CSS Javascript - dont need javascript - what is advanced HTML & CSS? Not too much code or unnecissary classes, class names and mixin names help you, 
+sectional Css sections, comments to help find and understand CSS and Html.  
+
+Use and develope statergy - UX/UI is not are it must have a purpose - brand identity 
+
+Develop Usability standards - User testing - make sure code is healthy and functional - Use a validator (CSS HTML JAVASCRIPT) can justify for reasons/warnings not followed.
+
+Select CSS methodology - Use css consistantly 
+
+Participate in group project - user testing and using user testing information and documentation for it
+
+Presentation - Slide show presentation, potentially 2 days for presentation. Finish project by wednesday of final week.   
+
+Understand and abide by standard copywrite - declare copywrited materials, document copywrited items.
+
+
+
+Failed submissons have 2 weeks from the declaration of the failed submission - a form will be given to you to describe the new submission date and what was missed.
+Submission 2 fails you have a 3rd attempt - another 2 weeks is given.
+If sub 3 fails - you have no more attempts, and Mike Williams has to request another submission (extreamly unlikely) 
