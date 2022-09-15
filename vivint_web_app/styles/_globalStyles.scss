@@ -1,0 +1,9 @@
+$warning_color: rgba(241, 199, 18, 1);
+$button_color: rgba(1, 219, 248, 1);
+$background_color: rgba(10, 11, 51, 1);
+
+@mixin main_button_style {
+  background-color: $button_color;
+  border: 2px solid $warning_color;
+  border-radius: 50px;
+}

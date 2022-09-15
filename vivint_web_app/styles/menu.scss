@@ -1,0 +1,5 @@
+@use "./_globalStyles.scss" as global;
+
+body {
+  background-color: global.$background_color;
+}

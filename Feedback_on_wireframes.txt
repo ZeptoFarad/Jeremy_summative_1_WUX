@@ -42,3 +42,20 @@ Menu is the best because of impaired vision
 Merge options 1 and 3, based on font size but having the icon makes it more accessable. Icons in circle looks like seperate button
 Circle looks separate button join images with buttons
 
+
+
+
+HiFi Feedback:
+
+Settings and Motions alarm Buttons too close together
+
+Cant easily see the Zoom and Cam01 etc onthe screen so might require a background
+
+Menu is too bright and blue - Spread the menu apart - made the background dim more when modal is open.
+
+
+
+
+
+
+
