@@ -1,5 +1,49 @@
 @use "./_globalStyles.scss" as global;
 
-body {
-  background-color: global.$background_color;
+body{
+  background-color: 	black;
+}
+
+.button_main {
+  @include global.main_button_style;
+}
+
+
+
+.menu_container {
+  @include global.main_menu_container;
+}
+.menu_container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 256px) {
+  .button_main {
+    justify-content: center;
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 320px){
+.body_section {
+  @include global.body_section;
+}
+.menu_container{
+  @include global.main_menu_container_nested
+}
+
+.menu_image{
+  img{
+    height: 200px;
+    filter:opacity(20%);
+  }
+  width: 100%;
+  text-align: center;
+  
+  align-self: center;
+}
+
 }
