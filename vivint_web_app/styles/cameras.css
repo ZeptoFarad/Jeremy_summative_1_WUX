@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*
+█ █▀▄▀█ █▀█ █▀█ █▀█ ▀█▀ █▀
+█ █░▀░█ █▀▀ █▄█ █▀▄ ░█░ ▄█
+*/
+@font-face {
+  font-family: "Sora_SemiBold";
+  src: url(/assets/fonts/Sora-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Prototype";
+  src: url(/assets/fonts/Prototype.ttf);
+}
+/* 
+█░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
+▀▄▀ █▀█ █▀▄ █ █▀█ █▄█ █▄▄ ██▄ ▄█
+*/
+/*
+█▀▄▀█ █ ▀▄▀ █ █▄░█ █▀
+█░▀░█ █ █░█ █ █░▀█ ▄█
+*/
+.zoom_button {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(10, 11, 51, 0.5) 44.27%, rgba(10, 11, 51, 0.27) 94.27%);
+  border-radius: 50px;
+  padding: 3px;
+}
+.zoom_button img {
+  height: 3em;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+section {
+  background-color: rgb(10, 11, 51);
+}
+
+.camera_card {
+  max-width: 320px;
+  border: rgb(163, 70, 249) solid 2px;
+  border-radius: 0 0 1em 1em;
+  overflow: hidden;
+}
+
+#camera_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "camera_1 camera_2" "camera_3 camera_4";
+  gap: 0.2em;
+}
+
+#camera_1 {
+  position: relative;
+  grid-area: camera_1;
+  height: 150px;
+  border: 4px solid rgb(1, 219, 248);
+}
+
+#camera_2 {
+  position: relative;
+  grid-area: camera_2;
+  height: 150px;
+  border: 4px solid rgb(1, 219, 248);
+}
+
+#camera_3 {
+  position: relative;
+  grid-area: camera_3;
+  height: 150px;
+  border: 4px solid rgb(1, 219, 248);
+}
+
+#camera_4 {
+  position: relative;
+  grid-area: camera_4;
+  height: 150px;
+  border: 4px solid rgb(1, 219, 248);
+}
+
+.mobile_heading {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile_heading div:first-child {
+  margin-left: 1.5em;
+}
+.mobile_heading div:first-child img {
+  height: 1.3em;
+}
+
+.control_buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+.control_buttons div {
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.control_buttons div h2 {
+  color: rgb(1, 219, 248);
+  font-family: "Prototype";
+  font-size: 1em;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=cameras.css.map */

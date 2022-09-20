@@ -19,6 +19,18 @@
 █▀▄▀█ █ ▀▄▀ █ █▄░█ █▀
 █░▀░█ █ █░█ █ █░▀█ ▄█
 */
+.zoom_button {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(10, 11, 51, 0.5) 44.27%, rgba(10, 11, 51, 0.27) 94.27%);
+  border-radius: 50px;
+  padding: 3px;
+}
+.zoom_button img {
+  height: 3em;
+}
+
 body {
   background-color: black;
 }
