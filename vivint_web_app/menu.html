@@ -9,10 +9,12 @@
     <script src="./js/jquery-3.6.1.min.js"></script>
   </head>
   <body>
-    <section id="content_section"></section>
+    <div class="body_section">
+    <section id="menu_content"></section>
+    </div>
     <script>
-      $.get('./s_menu.html', function (data) {
-        $('#content_section').replaceWith(data)
+      $.get('./menu_content.html', function (data) {
+        $('#menu_content').replaceWith(data)
       })
     </script>
   </body>

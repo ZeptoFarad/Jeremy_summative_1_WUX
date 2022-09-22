@@ -5,11 +5,11 @@
 */
 @font-face {
   font-family: "Sora_SemiBold";
-  src: url(/assets/fonts/Sora-SemiBold.ttf);
+  src: url(./assets/fonts/Sora-SemiBold.ttf);
 }
 @font-face {
   font-family: "Prototype";
-  src: url(/assets/fonts/Prototype.ttf);
+  src: url(./assets/fonts/Prototype.ttf);
 }
 /* 
 █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
@@ -19,6 +19,10 @@
 █▀▄▀█ █ ▀▄▀ █ █▄░█ █▀
 █░▀░█ █ █░█ █ █░▀█ ▄█
 */
+body {
+  background-color: rgb(10, 11, 51);
+}
+
 .zoom_button {
   position: absolute;
   bottom: 5px;
@@ -32,57 +36,11 @@
 }
 
 body {
-  background-color: black;
   margin: 0;
 }
 
-section {
+nav {
   background-color: rgb(10, 11, 51);
-}
-
-.camera_card {
-  max-width: 320px;
-  border: rgb(163, 70, 249) solid 2px;
-  border-radius: 0 0 1em 1em;
-  overflow: hidden;
-}
-
-#camera_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "camera_1 camera_2" "camera_3 camera_4";
-  gap: 0.2em;
-}
-
-#camera_1 {
-  position: relative;
-  grid-area: camera_1;
-  height: 150px;
-  border: 4px solid rgb(1, 219, 248);
-}
-
-#camera_2 {
-  position: relative;
-  grid-area: camera_2;
-  height: 150px;
-  border: 4px solid rgb(1, 219, 248);
-}
-
-#camera_3 {
-  position: relative;
-  grid-area: camera_3;
-  height: 150px;
-  border: 4px solid rgb(1, 219, 248);
-}
-
-#camera_4 {
-  position: relative;
-  grid-area: camera_4;
-  height: 150px;
-  border: 4px solid rgb(1, 219, 248);
-}
-
-.mobile_heading {
   display: flex;
   flex-direction: row;
   height: 10vh;
@@ -90,32 +48,213 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-.mobile_heading div:first-child {
+nav div:first-child {
   margin-left: 1.5em;
 }
-.mobile_heading div:first-child img {
+nav div:first-child img {
   height: 1.3em;
 }
 
-.control_buttons {
+.body_section {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  overflow: hidden;
+  border: double 13px rgb(163, 70, 249);
+  background-color: rgb(10, 11, 51);
+  border-radius: 2em;
+  width: 100vw;
+  justify-content: center;
   align-items: center;
-  padding: 1em;
+  border: unset;
+  border-radius: unset;
 }
-.control_buttons div {
+
+.outer_wrapper {
+  display: flex;
   align-items: center;
-  text-align: center;
   justify-content: space-between;
 }
-.control_buttons div h2 {
+
+.camera_container {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 90vh;
+  align-items: center;
+}
+.camera_container::-webkit-scrollbar {
+  display: none;
+}
+.camera_container .camera_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(250, 66, 253);
+}
+.camera_container .camera_label h2 {
+  font-family: "Prototype";
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+.camera_container .camera_image {
+  border-bottom: double 10px rgb(1, 219, 248);
+}
+.camera_container .camera_card {
+  flex: 1;
+  flex-grow: 0;
+  display: flex;
+  justify-content: flex-end;
+  border: double 10px rgb(1, 219, 248);
+  width: 320px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.camera_container .camera_card:nth-child(2) {
+  margin-left: 1em;
+}
+.camera_container .camera_card:nth-child(3) {
+  margin-left: 1em;
+}
+.camera_container .camera_card:nth-child(4) {
+  margin-left: 1em;
+}
+.camera_container .camera_card .control_buttons {
+  display: flex;
+  justify-content: space-around;
+  border-left: double rgb(163, 70, 249) 5px;
+  border-right: double rgb(163, 70, 249) 5px;
+  border-bottom: double rgb(163, 70, 249) 5px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
   color: rgb(1, 219, 248);
   font-family: "Prototype";
+}
+.camera_container .camera_card .control_buttons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+.camera_container .camera_card .control_buttons h2 {
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+.mobile_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(10, 11, 51);
+  align-items: center;
+  height: 10vh;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.mobile_footer div {
+  display: flex;
+  align-items: center;
+}
+.mobile_footer h3 {
+  padding: 0 1em;
+  color: rgb(1, 219, 248);
+  font-family: "Prototype";
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 1em;
 }
 
-@media (min-width: 600px) {
-  body {
-    background-color: blue;
+.button_main {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 1em;
+  background-color: rgb(1, 219, 248);
+  border-radius: 50px;
+  margin: 0.8em 0;
+  font-size: clamp(0.8em, 0.5vh, 1em);
+  font-family: "Prototype";
+}
+.button_main:hover {
+  background-color: rgb(163, 70, 249);
+  box-shadow: 0px 0px 20px 10px #fa42fd;
+  color: white;
+}
+.button_main:hover img {
+  filter: invert(1);
+}
+.button_main h2 {
+  margin: 0.3em;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+.button_main img {
+  height: 3em;
+}
+
+.menu_container {
+  width: 320px;
+  height: 90vh;
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1vw;
+  background-color: rgb(10, 11, 51);
+  box-shadow: inset 0px 0px 33px -4px #fa42fd;
+  flex: 1;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.menu_container::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden_on_mobile {
+  display: none;
+}
+
+@media (min-width: 690px) {
+  .hidden_on_mobile {
+    display: flex;
+  }
+  .hidden_on_desktop {
+    display: none;
+  }
+  .camera_button {
+    background-color: lightslategrey;
+  }
+  .camera_button:hover {
+    background-color: lightslategray;
+    box-shadow: unset;
+    color: unset;
+  }
+  .camera_button:hover img {
+    filter: unset;
+  }
+  .body_section {
+    border: double 13px rgb(163, 70, 249);
+    border-radius: 2em;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 654px) {
+  .camera_card.hidden_mobile {
+    display: none;
   }
 }/*# sourceMappingURL=cameras.css.map */

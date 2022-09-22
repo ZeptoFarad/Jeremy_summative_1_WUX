@@ -5,11 +5,11 @@
 */
 @font-face {
   font-family: "Sora_SemiBold";
-  src: url(/assets/fonts/Sora-SemiBold.ttf);
+  src: url(./assets/fonts/Sora-SemiBold.ttf);
 }
 @font-face {
   font-family: "Prototype";
-  src: url(/assets/fonts/Prototype.ttf);
+  src: url(./assets/fonts/Prototype.ttf);
 }
 /* 
 █░█ ▄▀█ █▀█ █ ▄▀█ █▄▄ █░░ █▀▀ █▀
@@ -19,6 +19,10 @@
 █▀▄▀█ █ ▀▄▀ █ █▄░█ █▀
 █░▀░█ █ █░█ █ █░▀█ ▄█
 */
+body {
+  background-color: rgb(10, 11, 51);
+}
+
 .zoom_button {
   position: absolute;
   bottom: 5px;
@@ -58,13 +62,14 @@ body {
 .button_main h2 {
   margin: 0.3em;
   letter-spacing: 0.05em;
+  font-weight: 300;
 }
 .button_main img {
   height: 3em;
 }
 
 .menu_container {
-  max-width: 320px;
+  width: 320px;
   height: 90vh;
   overflow-y: scroll;
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -97,10 +102,12 @@ body {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    border: solid 13px rgb(163, 70, 249);
-    border-style: double;
+    border: double 13px rgb(163, 70, 249);
     background-color: rgb(10, 11, 51);
     border-radius: 2em;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
   .menu_container {
     border-right: solid 13px rgb(163, 70, 249);

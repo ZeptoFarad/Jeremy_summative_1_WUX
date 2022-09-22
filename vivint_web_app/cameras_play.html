@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cameras</title>
+    <link rel="stylesheet" href="./styles/cameras.css".css">
+    <script src="./js/jquery-3.6.1.min.js"></script>
+  </head>
+  <body>
+    <!-- ///////////////// Header ////////////////// -->
+
+    <nav class="hidden_on_desktop">
+      <div class="burger_menu">
+        <img
+          src="./assets/images/burger_menu_symbol_google.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="logo">
+        <img src="./assets/images/vivint_logo.svg" alt="" srcset="" />
+      </div>
+    </nav>
+    <section class="outer_wrapper">
+      <!-- ///////////////// Left Desktop Menu Section ////////////////// -->
+      <div class="body_section">
+        <div class="hidden_on_mobile">
+          <div id="menu_content"></div>
+        </div>
+
+        <!-- ///////////////// Camera Container Section ////////////////// -->
+        <div  class="camera_container">
+          <iframe style="height:600px; width:400px; border: blue 5px solid; " src="./myframe1.html" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $.get('./menu_content.html', function (data) {
+        $('#menu_content').replaceWith(data)
+      })
+    </script>
+  </body>
+</html>
